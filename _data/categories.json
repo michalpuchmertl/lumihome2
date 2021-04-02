@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "5d713a66ec8f2b88b8f830b8",
+    "name": "Nájem",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830b9",
+    "name": "Elektřina",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830c0",
+    "name": "Oblečení",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830c1",
+    "name": "Hry",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830c2",
+    "name": "Doprava",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830c3",
+    "name": "Tabák",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  },
+  {
+    "_id": "5d713a66ec8f2b88b8f830c4",
+    "name": "Internet",
+    "createdBy": "5d7a514b5d2c12c7449be042"
+  }
+]

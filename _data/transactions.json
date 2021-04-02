@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "1d713995b721c3bb38c1f5d0",
+    "amount": 100,
+    "debt": "5d713995b721c3bb38c1f5d0",
+    "approved": false
+  },
+  {
+    "_id": "1d713995b721c3bb38c1f5d1",
+    "amount": 30,
+    "debt": "5d713995b721c3bb38c1f5d0",
+    "approved": false
+  },
+  {
+    "_id": "1d713995b721c3bb38c1f5d2",
+    "amount": 7,
+    "debt": "5d713995b721c3bb38c1f5d0",
+    "approved": false
+  },
+  {
+    "_id": "5d713995b721c3bb38c1f5d2",
+    "amount": 1100,
+    "debt": "5d713995b721c3bb38c1f5d1",
+    "approved": false
+  }
+]

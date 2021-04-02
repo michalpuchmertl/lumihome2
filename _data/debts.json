@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "5d713995b721c3bb38c1f5d0",
+    "users": {
+      "creditor": "5d7a514b5d2c12c7449be042",
+      "debtor": "5d7a514b5d2c12c7449be043"
+    },
+    "amount": 137,
+    "goods": "Ponožky",
+    "category": "5d713a66ec8f2b88b8f830c0"
+  },
+  {
+    "_id": "5d713995b721c3bb38c1f5d1",
+    "users": {
+      "creditor": "5d7a514b5d2c12c7449be042",
+      "debtor": "5d7a514b5d2c12c7449be043"
+    },
+    "amount": 10000,
+    "goods": "02/2021",
+    "category": "5d713a66ec8f2b88b8f830b8"
+  },
+  {
+    "_id": "5d713995b721c3bb38c1f5d2",
+    "users": {
+      "creditor": "5d7a514b5d2c12c7449be042",
+      "debtor": "5d7a514b5d2c12c7449be043"
+    },
+    "amount": 10000,
+    "goods": "03/2021",
+    "category": "5d713a66ec8f2b88b8f830b8"
+  }
+]
