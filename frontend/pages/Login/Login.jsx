@@ -47,19 +47,18 @@ function Login(props) {
 
   return (
     <div>
-      {/* {AuthRedirect()} */}
-      <button onClick={(e)=>console.log(e)}></button>
-
-      <form>
+      {AuthRedirect()}
+      <form onSubmit={handleSubmit}>
         <input type='email' ref={emailRef} placeholder='E-Mail' />
         <br />
         <input type='password' ref={passwordRef} placeholder='Heslo' />
         <br />
+        <button type="submit">Přihlásit se</button>
         <br />
         <span style={{ color: 'red' }}>{error}</span>
       </form>
       <hr />
-      {/* <Link to='/register'>Ještě nemám účet</Link> */}
+      <Link to='/register'>Ještě nemám účet</Link>
     </div>
   );
 }
