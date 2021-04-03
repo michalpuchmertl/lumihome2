@@ -16,7 +16,7 @@ User is authorized using [JWT Token](https://jwt.io/ "JWT Token") ([RFC 7519](ht
 Each user has e-mail (used as unique identificator for login), name, password, payment options and profile picture.
 
 ### User model
-```json
+```javascript
 {
   name: {type: String},
   email: {
