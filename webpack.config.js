@@ -12,7 +12,8 @@ const config = {
     new HtmlWebpackPlugin({
       appMountId: 'app',
       filename: 'index.html',
-      template: './public/index.html',
+	inject: 'body',
+      template: './templates/index.html',
     }),
     new webpack.HotModuleReplacementPlugin({
       multiStep: true,
