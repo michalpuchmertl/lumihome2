@@ -12,8 +12,7 @@ function Login(props) {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const handleSubmit = async function (e) {
-    e.preventDefault();
+  const handleSubmit = async function () {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
@@ -47,17 +46,17 @@ function Login(props) {
   return (
     <div>
       {AuthRedirect()}
-      <form action='POST' onSubmit={handleSubmit}>
+      <form onSubmit={(e)=>{e.preventDefault();handleSubmit()}}>
         <input type='email' ref={emailRef} placeholder='E-Mail' />
         <br />
         <input type='password' ref={passwordRef} placeholder='Heslo' />
         <br />
-        <button type='submit'>Submit</button>
+        <input type="submit"/>
         <br />
         <span style={{ color: 'red' }}>{error}</span>
       </form>
       <hr />
-      <Link to='/register'>Ještě nemám účett</Link>
+      <Link to='/register'>Ještě nemám účet</Link>
       {renderName()}
     </div>
   );
