@@ -12,6 +12,7 @@ const config = {
     new HtmlWebpackPlugin({
       appMountId: 'app',
       filename: 'index.html',
+      inject: 'body',
       template: './public/index.html',
     }),
     new webpack.HotModuleReplacementPlugin({

@@ -35,6 +35,7 @@ function Register(props) {
     const { user, token } = res.data;
     await userContext.setData(user);
     await userContext.setToken(token);
+    await localStorage.setItem('token', token);
   };
 
   const AuthRedirect = () => {

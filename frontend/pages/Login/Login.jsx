@@ -12,7 +12,8 @@ function Login(props) {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const handleSubmit = async function () {
+  const handleSubmit = async function (e) {
+    e.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
 
@@ -31,6 +32,7 @@ function Login(props) {
     const { user, token } = res.data;
     await userContext.setData(user);
     await userContext.setToken(token);
+    await localStorage.setItem('token', token);
   };
 
   const renderName = () => {
@@ -40,24 +42,24 @@ function Login(props) {
   };
 
   const AuthRedirect = () => {
-    if (userContext.token) return <Redirect to='/' />;
+    if (userContext.token || localStorage.getItem('token')) return <Redirect to='/' />;
   };
 
   return (
     <div>
-      {AuthRedirect()}
-      <form onSubmit={(e)=>{e.preventDefault();handleSubmit()}}>
+      {/* {AuthRedirect()} */}
+      <button onClick={(e)=>console.log(e)}></button>
+
+      <form>
         <input type='email' ref={emailRef} placeholder='E-Mail' />
         <br />
         <input type='password' ref={passwordRef} placeholder='Heslo' />
         <br />
-        <input type="submit"/>
         <br />
         <span style={{ color: 'red' }}>{error}</span>
       </form>
       <hr />
-      <Link to='/register'>Ještě nemám účet</Link>
-      {renderName()}
+      {/* <Link to='/register'>Ještě nemám účet</Link> */}
     </div>
   );
 }
