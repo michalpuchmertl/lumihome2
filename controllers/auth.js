@@ -13,7 +13,17 @@ exports.register = asyncHandler(async (req, res, next) => {
 
   const token = user.getSignedJwtToken();
 
-  res.status(201).json({ success: true, token });
+  res.status(201).json({
+    success: true,
+    data: {
+      user: {
+        email: user.email,
+        name: user.name,
+        id: user.id,
+      },
+      token,
+    },
+  });
 });
 
 // @desc    Login user
@@ -61,7 +71,17 @@ const sendTokenResponse = (user, statusCode, res) => {
   res
     .status(statusCode)
     .cookie('token', token, options)
-    .json({ success: true, token });
+    .json({
+      success: true,
+      data: {
+        user: {
+          email: user.email,
+          name: user.name,
+          id: user.id,
+        },
+        token,
+      },
+    });
 };
 
 // @desc    Current logged user

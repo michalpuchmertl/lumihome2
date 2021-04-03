@@ -18,6 +18,8 @@ const auth = require('./routes/auth');
 
 const app = express();
 
+app.use(express.static('public'));
+
 // Body parser
 app.use(express.json());
 
@@ -34,6 +36,10 @@ app.use('/api/v1/debts', debts);
 app.use('/api/v1/categories', categories);
 app.use('/api/v1/transactions', transactions);
 app.use('/api/v1/auth', auth);
+app.get('*', (req, res) => {
+  console.log('ted');
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+});
 
 // Error handler
 app.use(errorHandler);
