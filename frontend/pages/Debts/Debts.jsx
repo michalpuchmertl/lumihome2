@@ -18,7 +18,7 @@ function Debts(props) {
     return (
       <>
         <h1>Vítej {userContext.userData.name}</h1>
-        <button onClick={logout}>Odhlásit se</button>
+        <button onClick={logOut}>Odhlásit se</button>
       </>
     );
   };
